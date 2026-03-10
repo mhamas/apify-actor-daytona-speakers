@@ -1,0 +1,12 @@
+{
+    "$schema": "https://apify.com/schemas/v1/output.ide.json",
+    "actorOutputSchemaVersion": 1,
+    "title": "Daytona Compute Speakers",
+    "properties": {
+        "speakers": {
+            "type": "string",
+            "title": "Speakers",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

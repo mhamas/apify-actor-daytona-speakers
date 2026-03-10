@@ -1,0 +1,57 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "Full name of the speaker"
+            },
+            "title": {
+                "type": "string",
+                "description": "Role and company of the speaker (e.g. 'Co-founder and CEO of Daytona')"
+            },
+            "photoUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL of the speaker's headshot photo"
+            },
+            "companyLogoUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL of the speaker's company logo"
+            }
+        },
+        "required": ["name", "title"]
+    },
+    "views": {
+        "overview": {
+            "title": "Speakers",
+            "transformation": {
+                "fields": ["photoUrl", "name", "title", "companyLogoUrl"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "photoUrl": {
+                        "label": "Photo",
+                        "format": "image"
+                    },
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "companyLogoUrl": {
+                        "label": "Company Logo",
+                        "format": "image"
+                    }
+                }
+            }
+        }
+    }
+}
