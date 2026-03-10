@@ -113,36 +113,6 @@ items = client.dataset(run['defaultDatasetId']).list_items().items
 print(items)
 ```
 
-## Pricing and Performance
-
-### Compute Units
-
-This Actor is extremely efficient:
-- **Average run time**: 20-30 seconds
-- **Compute units per run**: ~0.01 CU
-- **Cost per run**: Less than $0.001
-
-With Apify's free tier (5 CU/month), you can run this Actor **500+ times per month** at no cost.
-
-### Performance
-
-- ⚡ **Speed**: Completes in under 30 seconds
-- 📦 **Data volume**: Extracts 20-50 speakers (varies by conference)
-- 💰 **Cost-effective**: Minimal compute unit consumption
-- 🔄 **Reliable**: Built on proven Crawlee framework
-
-## Tips and Best Practices
-
-### Getting the Best Results
-
-- **Run regularly** - Conference speaker lineups may be updated periodically
-- **Check for updates** - Visit the conference website to see when new speakers are announced
-- **Export formats** - Use JSON for API integration, CSV/Excel for spreadsheet analysis
-
-### Cost Optimization
-
-This Actor is already highly optimized and uses minimal resources. No special configuration needed to reduce costs.
-
 ## Use Cases
 
 ### Event Marketing
@@ -156,43 +126,3 @@ Analyze speaker diversity, company representation, and industry trends across mu
 
 ### Data Integration
 Feed speaker data into CRMs, marketing automation tools, or custom applications via the Apify API.
-
-## FAQ
-
-### Do I need to provide any input?
-No! This Actor requires zero configuration. Just click Start and it will scrape all speakers from the Daytona Compute website.
-
-### How often is the data updated?
-The Actor scrapes live data from the conference website each time you run it, so you always get the most current speaker list.
-
-### What if a speaker has no photo or company logo?
-The Actor will return `null` or omit the field if an image is not available on the website.
-
-### Can I scrape other conference websites?
-This Actor is specifically designed for the Daytona Compute conference website. For other conferences, you would need a different Actor or a custom solution.
-
-### What format can I download the results in?
-Apify supports multiple export formats: JSON, CSV, Excel, HTML, RSS, and XML.
-
-### Is this legal?
-Yes. The Actor scrapes publicly available information from the conference website for legitimate purposes like research and analysis.
-
-## Related Actors
-
-Looking for similar functionality? Check out these related Actors:
-
-- **[Website Content Crawler](https://apify.com/apify/website-content-crawler)** - Scrape content from any website
-- **[Cheerio Scraper](https://apify.com/apify/cheerio-scraper)** - Fast HTML scraping for developers
-- **[Web Scraper](https://apify.com/apify/web-scraper)** - Flexible scraper with JavaScript rendering
-
-## Support
-
-Need help or have questions?
-
-- 📧 **Email**: [Create an issue on GitHub or contact via Apify]
-- 📚 **Apify Documentation**: [docs.apify.com](https://docs.apify.com)
-- 💬 **Apify Community**: [community.apify.com](https://community.apify.com)
-
----
-
-Built with ❤️ using [Crawlee](https://crawlee.dev/) and the [Apify platform](https://apify.com).
